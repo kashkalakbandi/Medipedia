@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+      
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dip" >
+           
+        <!--  The child Views/Layout to flip -->
+       
+        <!-- 1 Layout 1 for 1st Screen -->
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="View and manage Your treatment course"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FE2E2E" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rr" />
+
+                  
+            </LinearLayout>
+           
+             <!--  5  Layout 2 for 2nd Screen -->
+             	<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                 <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="A personal diary for your medicines"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FE2E2E" />
+             	    
+					<ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:src="@drawable/papers" />
+					
+					<Button 
+                       android:id="@+id/buttonnext"
+                       android:text="Continue"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="0.1"
+                       android:background="#D6D6D6"
+                       />
+					</LinearLayout>
+					
+             	
+            
+            
+                          <!-- 2  Layout 5 for 5th Screen -->
+             	
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="Personal medical assistant in your hand"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FE2E2E" />
+                
+
+                    <ImageView
+                        android:id="@+id/add_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/medassis" />
+                   
+            </LinearLayout>
+            
+ 				
+        </ViewFlipper>
+
+</LinearLayout>

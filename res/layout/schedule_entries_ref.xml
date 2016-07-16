@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+                        android:fontFamily="sans-serif-light"
+            android:ems="10"
+            android:hint="Medicine Name   eg: Dolo"
+            android:inputType="textPersonName" 
+            
+>
+<requestFocus />
+    
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:padding="5dp"
+             android:background="#6E6E6E" >
+
+            <Spinner
+                android:id="@+id/spinner1"
+                            android:fontFamily="sans-serif-light"
+                
+                android:layout_width="match_parent"
+                android:popupBackground="#6E6E6E"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            
+        </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            
+            android:hint="Quantity  eg : 50 ml  or 1 tab  or 1/2 tab"
+            android:inputType="textPostalAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+            
+            android:text="Morning" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+            
+            android:text="Noon" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Evening" />
+
+    </LinearLayout>
+    
+    <ImageButton
+        android:id="@+id/save_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:src="@drawable/save_lay" />
+
+</LinearLayout>
